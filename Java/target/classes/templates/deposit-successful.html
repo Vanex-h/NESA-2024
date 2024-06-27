@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Successfully</title>
+</head>
+<body style="background-color: white; color: #4a4a4a; font-family: Arial, sans-serif;">
+<div style="max-width: 600px; margin: 0 auto; padding: 24px; background-color: white; border: 1px solid #e2e2e2; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+    <img src="https://www.bnr.rw/typo3conf/ext/bnr_theme/Resources/Public/Images/bnr_logo.png"
+         style="width: 176px; margin: 32px auto; display: block;" alt="BNR Logo">
+    <div style="text-align: center; margin-bottom: 24px;">
+        <h1 style="font-size: 24px; font-weight: bold; color: #a47e30;">Money Deposit Successfully</h1>
+    </div>
+    <div style="margin-bottom: 16px;">
+        <p style="font-size: 18px;">
+            Dear <span th:text="${fullName}">User</span>,
+        </p>
+        <p style="margin-top: 8px;">
+            Your saving of <span th:text="${amount}">0</span> RWF on your account has been Completed Successfully.
+        </p>
+    </div>
+    <div style="margin-top: 24px; text-align: center;">
+        <a href="http://localhost:9000/swagger-ui/index.html#/bank-account-controller"
+           style="display: inline-block; padding: 12px 24px; color: white; background-color: #a47e30; border-radius: 9999px; text-decoration: none; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            View Details
+        </a>
+    </div>
+</div>
+<footer style="text-align: center; margin-top: 32px; color: #a47e30; font-size: 14px;">
+    &copy; <span th:text="${currentYear}">2024</span> BNR 2024. All rights reserved.
+</footer>
+</body>
+</html>
